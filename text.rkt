@@ -1,13 +1,12 @@
-#lang racket
+#lang racket/base
 
-(require "text/structs.rkt"
-         "text/font.rkt"
-         "text/text.rkt"
-         "text/misc.rkt")
+(require "private/text/font.rkt"
+         "private/text/misc.rkt"
+         "private/text/draw.rkt"
+         "private/text/ops.rkt")
 
-(provide (all-from-out
-          "text/structs.rkt"
-          "text/font.rkt"
-          "text/text.rkt"
-          "text/misc.rkt"))
 
+(provide (all-from-out "private/text/font.rkt"
+                       "private/text/misc.rkt"
+                       "private/text/draw.rkt"
+                       "private/text/ops.rkt"))
