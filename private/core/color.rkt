@@ -60,6 +60,6 @@
 (define DARKBROWN (make-Color 76 63 47 255))
 (define WHITE (make-Color 255 255 255 255))
 (define BLACK (make-Color 0 0 0 255))
-(define BLANK (make-Color 0 0 0 0))
+(define CLEAR (make-Color 0 0 0 0))
 (define MAGENTA (make-Color 255 0 255 255))
 (define WIZARDWHITE (make-Color 245 245 245 255))

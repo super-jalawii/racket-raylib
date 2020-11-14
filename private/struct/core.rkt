@@ -48,15 +48,27 @@
    [max _Vec3]))
 
 (define _WindowFlags (_bitmask '(
-                              FLAG_RESERVED           = 1
-                              FLAG_FULLSCREEN_MODE    = 2
-                              FLAG_WINDOW_RESIZABLE   = 4
-                              FLAG_WINDOW_UNDECORATED = 8
-                              FLAG_WINDOW_TRANSPARENT = 16
-                              FLAG_WINDOW_HIDDEN      = 128
-                              FLAG_WINDOW_ALWAYS_RUN  = 256
-                              FLAG_MSAA_4X_HINT       = 32
-                              FLAG_VSYNC_HINT         = 64)))
+                                 FLAG_NONE            = 0
+                                 FLAG_RESERVED           = 1
+                                 FLAG_FULLSCREEN_MODE    = 2
+                                 FLAG_WINDOW_RESIZABLE   = 4
+                                 FLAG_WINDOW_UNDECORATED = 8
+                                 FLAG_WINDOW_TRANSPARENT = 16
+                                 FLAG_WINDOW_HIDDEN      = 128
+                                 FLAG_WINDOW_ALWAYS_RUN  = 256
+                                 FLAG_MSAA_4X_HINT       = 32
+                                 FLAG_VSYNC_HINT         = 64)))
+
+(define window::none 'FLAG_NONE)
+(define window::reserved 'FLAG_RESERVED)
+(define window::fullscreen 'FLAG_FULLSCREEN_MODE)
+(define window::resizable 'FLAG_WINDOW_RESIZABLE)
+(define window::undecorated 'FLAG_WINDOW_UNDECORATED)
+(define window::transparent 'FLAG_WINDOW_TRANSPARENT)
+(define window::hidden 'FLAG_WINDOW_HIDDEN)
+(define window::always-run 'FLAG_WINDOW_ALWAYS_RUN)
+(define window::msaa4x 'FLAG_MSAA_4X_HINT)
+(define window::vsync 'FLAG_VSYNC_HINT)
 
 (define _LogType (_enum '(
                           LOG_ALL = 0
@@ -67,3 +79,12 @@
                           LOG_ERROR
                           LOG_FATAL
                           LOG_NONE)))
+
+(define log::all 'LOG_ALL)
+(define log::trace 'LOG_TRACE)
+(define log::debug 'LOG_DEBUG)
+(define log::info 'LOG_INFO)
+(define log::warning 'LOG_WARNING)
+(define log::error 'LOG_ERROR)
+(define log::fatal 'LOG_FATAL)
+(define log::none 'LOG_NONE)

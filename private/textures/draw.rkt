@@ -23,6 +23,7 @@
 
 ;;  Draw a part of a texture defined by a rectangle
 ; void DrawTextureRec(Texture2D texture, Rectangle sourceRec, Vector2 position, Color tint);
+(rl draw-tex-rect [_fun _Texture2D _Rect _Vec2 _Color -> _void] #:c-id DrawTextureRec)
 
 ;;  Draw texture quad with tiling and offset parameters
 ; void DrawTextureQuad(Texture2D texture, Vector2 tiling, Vector2 offset, Rectangle quad, Color tint);
